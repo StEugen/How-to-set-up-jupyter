@@ -18,11 +18,12 @@ c.JupyterHub.port = 80
 c.Authenticator.admin_users = {'<nameoftheuser>')
 c.Authenticator.allowed_users = {'<nameoftheuser1>', ‘<nameoftheuser2>, ‘<etc>’}
 save file and exit
-3)Now we need to add users: sudo adduser <nameoftheuserweareadding> 
+3)Now we need to add users: sudo adduser <nameoftheuser> 
 4)set the password: sudo passwd <nameoftheuser>
 
 Now we are ready to run jupyterhub
 sudo jupyterhub
-By default the jupyterhub will run on smth like 127.0.x.x; to specify the ip addres add to the command above following: --ip <ip_adress_you_need>
+By default the jupyterhub will run on smth like 127.0.x.x; to specify the ip addres add to the command above following: 
+--ip <ip_adress_you_need>
 
 That's all 

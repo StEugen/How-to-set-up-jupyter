@@ -12,5 +12,4 @@
 	pip install jupyter
 6)start
 	jupyter notebook --no-browser --ip <specify the ip>
-7)to let every machine see configure router setings
-	make DZS 
+7)to let every machine see the server configure router setings
