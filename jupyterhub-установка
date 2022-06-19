@@ -12,19 +12,19 @@ sudo apt install python3.8)
 4)установите notebook: sudo python3 -m pip install notebook
 
 Чтоже, давайте настроим jupyterhub
-1)generate config  sudo jupyterhub --generate-config
-2)let's edit configuration file: sudo vim jupyterhub_config.py
-you can just add line anywhere you want or find specific lines:
+1)сгенерируйте конфиг: sudo jupyterhub --generate-config
+2)Давайте немного изменим конфигурационный файл: sudo vim jupyterhub_config.py
+Вы можете добавить эти строчки где хотите или найти их:
 c.JupyterHub.port = 80
 c.Authenticator.admin_users = {'<nameoftheuser>')
 c.Authenticator.allowed_users = {'<nameoftheuser1>', ‘<nameoftheuser2>, ‘<etc>’}
-save file and exit
-3)Now we need to add users: sudo adduser <nameoftheuser> 
-4)set the password: sudo passwd <nameoftheuser>
+сохраните файл и выйдите
+3)Теперь надо добавить пользователей: sudo adduser <nameoftheuser> 
+4)установите пароль: sudo passwd <nameoftheuser>
 
-Now we are ready to run jupyterhub
+Теперь все готово для запуска jupyterhub
 RUN sudo jupyterhub
-By default the jupyterhub will run on smth like 127.0.x.x; to specify the ip addres add to the command above following: 
+По умолчанию jupyterhub будет находиться по адрессу типа 127.0.x.x; Чтобы указать какой-то определенной ip-адресс введите: 
 --ip <ip_adress_you_need>
 
-That's all 
+Вот и все
